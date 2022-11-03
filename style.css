@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900);
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "lilegyptmedium";
+  src: url("lilegypt-webfont.woff2") format("woff2"),
+    url("lilegypt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Lato", "Avenir Next", Arial, sans-serif;
+  margin: 0;
+  background: #000;
+  background-size: cover;
+}
+
+header {
+  color: white;
+  /* -webkit-transition: 0.4s;
+  transition: 0.4s; */
+  /* padding: 0.5em; */
+}
+nav a {
+  color: inherit;
+  padding: 0 12px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a:hover {
+  color: tan;
+  text-decoration: none;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.overlay {
+  min-height: 100vh;
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
+  display: flex;
+  /* -webkit-box-align: center;
+  -ms-flex-align: center; */
+  align-items: center;
+  /* -webkit-box-pack: center;
+  -ms-flex-pack: center; */
+  justify-content: center;
+  font-family: "lilegyptmedium";
+}
+
+.overlay div {
+  /* background: rgb(10, 10, 10, 0.8) none repeat scroll 0 0; */
+  color: rgb(255, 255, 255);
+  font-size: 200px;
+  font-weight: 600;
+  /* margin: 2rem 3rem 0; */
+  mix-blend-mode: overlay;
+  /* padding: 10px 40px; */
+  text-align: center;
+}
