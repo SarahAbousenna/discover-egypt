@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poor+Story&family=Roboto:wght@100;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="/src/favicon.ico" />
 
     <link rel="stylesheet" href="/style.css" />
     <script
@@ -58,6 +59,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">News</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -66,7 +70,7 @@
 
     <div class="overlay">
       <div>
-        Discover <a href="#"> <i class="fa-solid fa-ankh ankh"></i> </a> Egypt
+        Discover <a href="#"><i class="fa-solid fa-ankh ankh"></i></a> Egypt
       </div>
     </div>
 
@@ -75,7 +79,7 @@
         <i class="fa-solid fa-code-fork"></i> This project was coded by Sarah
         Abousenna, and is open-sourced on
         <a
-          href="https://github.com/SarahAbousenna"
+          href="https://github.com/SarahAbousenna/discover-egypt"
           target="_blank"
           class="social-links"
           ><i class="fa-brands fa-github"></i> Github</a
@@ -83,20 +87,20 @@
       </p>
     </div>
 
-    <audio src="/src/mainaudio.mp3" controls autoplay>
-      <embed
-        src="/src/mainaudio.mp3"
-        width="300"
-        height="90"
-        loop="true"
-        autostart="true"
-      />
+    <audio id="player" class="audioplayer" autoplay controls>
+      <source src="/src/mainaudio.mp3" type="audio/mp3" />
     </audio>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
       crossorigin="anonymous"
+      window.onload="function()"
+      {
+      var
+      context="new"
+      AudioContext();
+      }
     ></script>
   </body>
 </html>

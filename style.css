@@ -4,27 +4,29 @@
 }
 
 @font-face {
-  font-family: "lilegyptmedium";
-  src: url("lilegypt-webfont.woff2") format("woff2"),
-    url("lilegypt-webfont.woff") format("woff");
+  /* font-family: "lilegyptmedium";
+  src: url("/fonts/lilegypt-webfont.woff2") format("woff2"),
+    url("/fonts/lilegypt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; */
+  font-family: "akhenatonregular";
+  src: url("/fonts/akhenaton-lyld-webfont.woff2") format("woff2"),
+    url("/fonts/akhenaton-lyld-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: "Lato", "Avenir Next", Arial, sans-serif;
   margin: 0;
   background: #000;
   background-size: cover;
+  font-family: "Poor Story", cursive;
 }
 
 header {
   color: white;
   font-family: "Poor Story", cursive;
   font-weight: bold;
-  /* -webkit-transition: 0.4s;
-  transition: 0.4s; */
-  /* padding: 0.5em; */
 }
 nav a {
   color: inherit;
@@ -32,6 +34,11 @@ nav a {
   text-decoration: none;
   font-size: 25px;
 }
+
+.navbar-toggle {
+  color: white;
+}
+
 .ankhnav {
   font-size: 25px;
 }
@@ -51,30 +58,23 @@ video {
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
+  z-index: 0;
 }
 
 .overlay {
   min-height: 100vh;
-  /* display: -webkit-box;
-  display: -ms-flexbox; */
   display: flex;
-  /* -webkit-box-align: center;
-  -ms-flex-align: center; */
   align-items: center;
-  /* -webkit-box-pack: center;
-  -ms-flex-pack: center; */
   justify-content: center;
-  font-family: "lilegyptmedium";
+  font-family: "akhenatonregular";
+  z-index: 3;
 }
 
 .overlay div {
-  /* background: rgb(10, 10, 10, 0.8) none repeat scroll 0 0; */
   color: rgb(255, 255, 255);
-  font-size: 150px;
+  font-size: 250px;
   font-weight: 600;
-  /* margin: 2rem 3rem 0; */
   mix-blend-mode: overlay;
-  /* padding: 10px 40px; */
   text-align: center;
 }
 
@@ -83,6 +83,7 @@ video {
   position: relative;
   top: -50px;
   color: white;
+  font-size: 20px;
 }
 
 .ankh {
@@ -92,19 +93,26 @@ video {
 }
 
 .overlay .ankh {
-  /* background: rgb(10, 10, 10, 0.8) none repeat scroll 0 0; */
   color: rgb(255, 255, 255);
   font-size: 150px;
   font-weight: 600;
-  /* margin: 2rem 3rem 0; */
   mix-blend-mode: overlay;
-  /* padding: 10px 40px; */
   text-align: center;
 }
 
 :hover.ankh {
   color: rgb(40, 15, 0);
   cursor: pointer;
-  transform: scale(1.8);
+  transform: scale(4);
   transition: 0.3s ease-in-out;
+}
+
+.audioplayer {
+  display: flex;
+  position: relative;
+  top: -100px;
+  z-index: 2;
+  opacity: 0.4;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
