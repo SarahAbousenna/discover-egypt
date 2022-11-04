@@ -20,6 +20,7 @@ body {
 
 header {
   color: white;
+  font-family: "Roboto", sans-serif;
   /* -webkit-transition: 0.4s;
   transition: 0.4s; */
   /* padding: 0.5em; */
@@ -71,4 +72,11 @@ video {
   mix-blend-mode: overlay;
   /* padding: 10px 40px; */
   text-align: center;
+}
+
+.footer {
+  text-align: center;
+  position: relative;
+  top: -50px;
+  color: white;
 }
