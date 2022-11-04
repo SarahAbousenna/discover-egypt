@@ -20,7 +20,8 @@ body {
 
 header {
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poor Story", cursive;
+  font-weight: bold;
   /* -webkit-transition: 0.4s;
   transition: 0.4s; */
   /* padding: 0.5em; */
@@ -29,7 +30,10 @@ nav a {
   color: inherit;
   padding: 0 12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
+}
+.ankhnav {
+  font-size: 25px;
 }
 
 a:hover {
@@ -66,7 +70,7 @@ video {
 .overlay div {
   /* background: rgb(10, 10, 10, 0.8) none repeat scroll 0 0; */
   color: rgb(255, 255, 255);
-  font-size: 200px;
+  font-size: 150px;
   font-weight: 600;
   /* margin: 2rem 3rem 0; */
   mix-blend-mode: overlay;
@@ -79,4 +83,28 @@ video {
   position: relative;
   top: -50px;
   color: white;
+}
+
+.ankh {
+  color: white;
+  font-size: 100px;
+  text-align: center;
+}
+
+.overlay .ankh {
+  /* background: rgb(10, 10, 10, 0.8) none repeat scroll 0 0; */
+  color: rgb(255, 255, 255);
+  font-size: 150px;
+  font-weight: 600;
+  /* margin: 2rem 3rem 0; */
+  mix-blend-mode: overlay;
+  /* padding: 10px 40px; */
+  text-align: center;
+}
+
+:hover.ankh {
+  color: rgb(40, 15, 0);
+  cursor: pointer;
+  transform: scale(1.8);
+  transition: 0.3s ease-in-out;
 }
