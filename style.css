@@ -17,10 +17,11 @@
 }
 
 body {
-  margin: 0;
+  /* margin: 0; */
   background: #000;
   background-size: cover;
   font-family: "Poor Story", cursive;
+  height: 100vh;
 }
 
 header {
@@ -29,13 +30,13 @@ header {
   font-weight: bold;
 }
 nav a {
-  color: inherit;
   padding: 0 12px;
   text-decoration: none;
   font-size: 25px;
+  color: white;
 }
 
-.navbar-toggle {
+.navbar-brand {
   color: white;
 }
 
@@ -46,6 +47,8 @@ nav a {
 a:hover {
   color: tan;
   text-decoration: none;
+  transform: scale(1.1);
+  transition: 0.1s ease-in-out;
 }
 
 video {
