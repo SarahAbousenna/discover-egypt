@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900);
+
 * {
   box-sizing: border-box;
 }
@@ -9,9 +10,10 @@
     url("/fonts/lilegypt-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; */
-  font-family: "akhenatonregular";
-  src: url("/fonts/akhenaton-lyld-webfont.woff2") format("woff2"),
-    url("/fonts/akhenaton-lyld-webfont.woff") format("woff");
+
+  font-family: "devasiabold";
+  src: url("/fonts/devasia-bold-webfont.woff2") format("woff2"),
+    url("/fonts/devasia-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -20,19 +22,18 @@ body {
   /* margin: 0; */
   background: #000;
   background-size: cover;
-  font-family: "Poor Story", cursive;
+  /* font-family: "Poppins", sans-serif; */
   height: 100vh;
 }
 
 header {
   color: white;
-  font-family: "Poor Story", cursive;
-  font-weight: bold;
+  font-family: "Poppins", sans-serif;
 }
 nav a {
   padding: 0 12px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
 }
 
@@ -69,44 +70,27 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "akhenatonregular";
+  font-family: "devasiabold";
   z-index: 3;
 }
 
 .overlay div {
   color: rgb(255, 255, 255);
-  font-size: 250px;
+  font-size: 220px;
   font-weight: 600;
   mix-blend-mode: overlay;
   text-align: center;
 }
 
-.footer {
-  text-align: center;
-  position: relative;
-  top: -50px;
-  color: white;
-  font-size: 20px;
+.ankhimg {
+  height: 170px;
+  padding-bottom: 15px;
 }
 
-.ankh {
-  color: white;
-  font-size: 100px;
-  text-align: center;
-}
-
-.overlay .ankh {
-  color: rgb(255, 255, 255);
-  font-size: 150px;
-  font-weight: 600;
-  mix-blend-mode: overlay;
-  text-align: center;
-}
-
-:hover.ankh {
+:hover.ankhimg {
   color: rgb(40, 15, 0);
   cursor: pointer;
-  transform: scale(4);
+  transform: scale(1.5);
   transition: 0.3s ease-in-out;
 }
 
@@ -118,4 +102,12 @@ video {
   opacity: 0.4;
   padding-bottom: 10px;
   padding-left: 10px;
+}
+
+.footer {
+  text-align: center;
+  position: relative;
+  top: -50px;
+  color: white;
+  font-size: 15px;
 }
