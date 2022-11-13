@@ -192,13 +192,18 @@ p {
   border-radius: 10px;
 }
 .weather-icon {
-  width: 60px;
+  width: 50px;
   margin-bottom: 20px;
 }
 
 .curr-city,
 #current-weather {
   font-size: 25px;
+}
+
+.curr-weather,
+.conditons {
+  padding-left: 100px;
 }
 
 .curr-city {
