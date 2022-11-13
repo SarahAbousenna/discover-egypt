@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,11 +40,13 @@
     <title>Discover Egypt</title>
   </head>
   <body>
+    <!-------------------------- VIDEO  ------------------------------->
+
     <video playsinline autoplay muted loop>
       <source src="./src/karnak.mp4" type="video/mp4" />
       Your browser does not support the video tag. Please upgrade your browser.
     </video>
-
+    <!-------------------------- NAVIGATION BAR  ------------------------------->
     <header>
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid mt-1">
@@ -60,23 +67,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/discover.html"
+                <a class="nav-link" aria-current="page" href="#carouselExampleIndicators"
                   >Discover</a
                 >
               </li>
+
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="/portfolio.html"
-                  class="secondary-link"
-                  >News</a
-                >
+                <a class="nav-link" href="#weath">Weather</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Weather</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
+                <a class="nav-link" href="#carouselExampleIndicators">Gallery</a>
               </li>
               <li class="nav-item sound">
                 <audio id="player" class="audioplayer" autoplay controls>
@@ -104,6 +104,8 @@
       src="/src/ankhvertical-02.png"
       alt="backgroundimg"
     />
+
+    <!-------------------------- GALLERY  ------------------------------->
 
     <div class="title">Places to Discover</div>
 
@@ -198,9 +200,77 @@
         </a>
       </div>
     </div>
+    <!-------------------------- WEATHER  ------------------------------->
 
-    <div class="titles">Weather</div>
+    <div class="titles" id="weath">Weather</div>
 
+       <div class="container weatherContainer">
+
+          <!-- <div class="main"> -->
+            <div class="row">
+
+              <div class="col-6 curr-weather">
+                <span class="weatherimg"
+                  ><img
+                    src=""
+                    alt="weather-icon"
+                    class="weather-icon"
+                    id="curr-weather-icon"
+                /></span>
+                <span class="current-city-weather">
+                  <span id="current-weather"></span>
+                  <span
+                    ><a href="#current-weather" id="celsius-degree" class="celsius active"
+                      >°C</a
+                    ></span
+                  >
+                  <span class="dash"> | </span>
+                  <span class="fehrenhit">
+                    <a href="#" id="fahrenheit-degree" class="fahrenheit">
+                      °F</a
+                    ></span
+                  >
+                </span>
+              </div>
+
+              <div class="col-6 curr-city"> 
+               <i class="fa-solid fa-location-dot fa-flip location-pin" style="--fa-animation-duration: 8s;" > </i>
+                <span id="currentcity">  </span>
+                <span>, </span>
+                <span id="currentcountry">  </span>
+              </div>
+
+              <div class="col-6 conditons">
+                <div class="col">
+                  <span class="weather-description" id="weather-description">
+                  </span>
+                </div class= "humid-wind">
+
+                <div class="col">
+                  <i class="fa-solid fa-droplet"></i> <span>Humidity:</span>
+                  <span id="humidity"></span>%
+                </div>
+
+                <div class="col">
+                  <i class="fa-solid fa-wind"></i> <span>Wind:</span>
+                  <span id="wind"></span> km/h
+                </div>
+              </div>
+
+              <div class="col date">
+                <div class="col">Last Updated</div>
+                <div class="col" id="curr-date"></div>
+              </div>
+
+          </div>
+          <div class="weekly-forcast-container" id="weekly-forcast">
+        </div>  
+
+  </div>
+  
+
+    <!-------------------------- FOOTER  ------------------------------->
+    <div class="container">
     <div class="footer">
       <p class="open-source">
         <i class="fa-solid fa-code-fork"></i> This project was coded by Sarah
@@ -213,6 +283,11 @@
         >
       </p>
     </div>
+    </div>
+
+    <!-------------------------- JS  ------------------------------->
+
+
 
     <script src="src/app.js"></script>
 
